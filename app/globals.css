@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/* :root {
+  --black: rgba(0, 0, 0, 1);
+  --red: rgba(255, 0, 0, 1);
+  --white: rgba(255, 255, 255, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,9 +16,10 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+}  */
 
 body {
+  
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
