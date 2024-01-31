@@ -36,8 +36,6 @@ export default function Home(): JSX.Element {
         const res = await fetch("https://api.github.com/users/cdwhitt/repos");
         const data = await res.json();
 
-        console.log(data, "DATA");
-
         const filteredData = data.filter(
           (item: { description: null }) => item.description !== null
         );
