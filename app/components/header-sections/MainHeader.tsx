@@ -1,3 +1,4 @@
+import Image from "next/image";
 export const MainHeader: React.FC = () => {
   return (
     <div>
@@ -5,7 +6,15 @@ export const MainHeader: React.FC = () => {
         casey.whittaker
       </h1>
       <h2 className="mt-3 text-lg font-medium tracking-tight text-black sm:text-xl font-mono">
-        software engineer // writer
+        software engineer{" "}
+        <Image
+          src={"/shock.png"}
+          height={15}
+          width={15}
+          alt={""}
+          className="inline-block"
+        />{" "}
+        writer
       </h2>
     </div>
   );
