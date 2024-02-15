@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const FooterSection: React.FC = () => {
   return (
-    <footer className="max-w-md pb-16 text-sm text-black sm:pb-0">
+    <footer className="max-w-md pb-16 text-sm text-black dark:text-white sm:pb-0">
       <p>
         This portfolio was inspired by{" "}
         <a

@@ -8,6 +8,7 @@ import { BlogSection } from "./components/main-sections/BlogSection";
 import { ExperienceSection } from "./components/main-sections/ExperienceSection";
 import { ProjectsSection } from "./components/main-sections/ProjectsSection";
 import { FooterSection } from "./components/main-sections/FooterSection";
+import { DarkModeToggle } from "./components/header-sections/DarkModeToggle";
 
 export default function Home(): JSX.Element {
   const [posts, setPosts] = useState([]);
@@ -49,23 +50,26 @@ export default function Home(): JSX.Element {
   }, []);
 
   return (
-    <div className="lg:flex lg:justify-between lg:gap-4">
-      <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 xl:px-10">
-        <div>
-          <MainHeader />
-          <Navigation />
-        </div>
-        <div>
-          <SocialLinks />
-        </div>
-      </header>
-      <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
-        <AboutSection />
-        <ExperienceSection />
-        <ProjectsSection projects={projects} />
-        <BlogSection posts={posts} />
-        <FooterSection />
-      </main>
-    </div>
+    <>
+      <DarkModeToggle />
+      <div className="lg:flex lg:justify-between lg:gap-4">
+        <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 xl:px-10">
+          <div>
+            <MainHeader />
+            <Navigation />
+          </div>
+          <div>
+            <SocialLinks />
+          </div>
+        </header>
+        <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
+          <AboutSection />
+          <ExperienceSection />
+          <ProjectsSection projects={projects} />
+          <BlogSection posts={posts} />
+          <FooterSection />
+        </main>
+      </div>
+    </>
   );
 }

@@ -11,7 +11,7 @@ export const AboutSection: React.FC = () => {
       <div className={divHeaderWrapperClasses}>
         <h2 className={sectionHeaderClasses}>About</h2>
       </div>
-      <div>
+      <div className="dark:text-slate">
         <p className="mb-4">
           In the era of personal blogs and MySpace, the limitless creativity on
           the internet captivated me. As a kid, I was fascinated by how websites

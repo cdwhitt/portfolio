@@ -33,7 +33,7 @@ export const ExperienceSection: React.FC = () => {
                 </header>
                 <div className="z-10 sm:col-span-6">
                   <h3
-                    className="font-bold"
+                    className="font-bold dark:text-white"
                     aria-label={`${job.title} - ${job.id}`}
                   >
                     {job.title} ⚡️ {job.id}

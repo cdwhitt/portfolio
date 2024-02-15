@@ -8,6 +8,8 @@ import {
   tagClasses,
 } from "./styles";
 
+import parse from "html-react-parser";
+
 type MediumData = {
   author: string;
   categories: Array<string>;
@@ -26,6 +28,12 @@ type BlogProps = {
 export const BlogSection: React.FC<BlogProps> = (props: BlogProps) => {
   const { posts } = props;
   const formatDate = (date: Date) => date.toDateString();
+
+  const formatContentBlurb = (content: string) => {
+    return content.substring(0, 300).includes("...")
+      ? content.substring(0, 300)
+      : content.substring(0, 300) + "...";
+  };
   return (
     <section id="blog" className={sectionClasses} aria-label="Blog">
       <div className={divHeaderWrapperClasses}>
@@ -47,7 +55,10 @@ export const BlogSection: React.FC<BlogProps> = (props: BlogProps) => {
                   </header>
 
                   <div className="z-10 sm:col-span-6">
-                    <h3 className="font-bold">{post.title}</h3>
+                    <h3 className="font-bold dark:text-white">{post.title}</h3>
+
+                    {parse(formatContentBlurb(post.content))}
+
                     <ul className="mt-2 flex flex-wrap" aria-label="Categories">
                       {post.categories.map((cat) => (
                         <li key={cat} className="mr-1.5 mt-2">

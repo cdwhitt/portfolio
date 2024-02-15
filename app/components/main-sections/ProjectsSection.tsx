@@ -52,10 +52,12 @@ export const ProjectsSection: React.FC<ProjectsProps> = (
                     Last updated on {formatDate(new Date(project.pushed_at))}
                   </header>
                   <div className="z-10 sm:col-span-6">
-                    <h3 className="font-bold">
+                    <h3 className="font-bold dark:text-white">
                       {project.name} {project.homepage && "🔗"}
                     </h3>
-                    <div className={tagClasses}>{project?.description}</div>
+                    <div className="dark:text-slate font-mono">
+                      {project?.description}
+                    </div>
                   </div>
                 </div>
               </li>

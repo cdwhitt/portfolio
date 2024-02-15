@@ -1,12 +1,12 @@
 export const contentDivClasses =
-  "transition-all hover:bg-blue/20 rounded group relative grid p-2 sm:grid-cols-8 sm:gap-8 md:gap-4";
+  "transition-all hover:bg-blue/20 rounded group relative grid p-2 sm:grid-cols-8 sm:gap-8 md:gap-4 dark:text-slate";
 
 export const contentDateClasses: string =
-  "z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide sm:col-span-2 font-mono";
+  "z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide sm:col-span-2 font-mono dark:text-blue/75";
 
-export const tagClasses: string = "font-mono text-black -p-1";
+export const tagClasses: string = "font-mono text-black dark:text-white";
 
-export const skillsClasses: string = "font-mono text-black";
+export const skillsClasses: string = "font-mono text-black dark:text-white";
 
 export const contentLinkClasses: string =
   "text-blue transition hover:bg-yellow hover:text-black font-medium ";
