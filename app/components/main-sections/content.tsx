@@ -62,7 +62,7 @@ export const experienceContent: {
     url: "https://www.linkedin.com/company/secureseniorconnections/about/",
     duration: "Feb 2021 - Sept 2022",
     about:
-      "SSC was a small startup that aimed to serve elderly individuals at risk of lonliness and isolation. Their product was a virtual senior center where elder individuals could connect with one another online. While working there, I wore many hats: I worked closely with the marketing team to create email communications templates; I built out a number of microservices that would deliver those emails (both transactional and for marketing); and I assisted in the development of the internal content moderation tool.",
+      "SSC was a small startup that aimed to serve elderly individuals at risk of loneliness and isolation. Their product was a virtual senior center where elder individuals could connect with one another online. While working there, I wore many hats: I worked closely with the marketing team to create email communications templates; I built out a number of microservices that would deliver those emails (both transactional and for marketing); and I assisted in the development of the internal content moderation tool.",
     skills: [
       "react",
       "node",
